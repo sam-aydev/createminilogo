@@ -211,8 +211,8 @@ export default function Home() {
                   className=""
                 />
                 <div className="flex justify-between ">
-                  {myShadow.map((item) => (
-                    <div className=" font-semibold text-sm">
+                  {myShadow.map((item, index) => (
+                    <div key={index} className=" font-semibold text-sm">
                       <p>{item.toLocaleUpperCase()}</p>
                     </div>
                   ))}
